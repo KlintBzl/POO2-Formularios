@@ -42,10 +42,7 @@
                                   <Component id="lblRG1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblCPF1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnProfessor1" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblIdade1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="lblIdade1" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="lblIdade2" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -194,6 +191,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Professor"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnProfessor1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblCEP1">
       <Properties>
@@ -209,6 +209,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Pessoa"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPessoaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtEmail1">
     </Component>

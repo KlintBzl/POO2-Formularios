@@ -79,12 +79,22 @@ public class FormularioAluno extends javax.swing.JFrame {
         lblTelefone1.setText("Telefone:");
 
         btnProfessor1.setText("Professor");
+        btnProfessor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProfessor1ActionPerformed(evt);
+            }
+        });
 
         lblCEP1.setText("CEP:");
 
         lblRG1.setText("RG:");
 
         btnPessoa.setText("Pessoa");
+        btnPessoa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPessoaActionPerformed(evt);
+            }
+        });
 
         lblNome1.setText("Nome:");
 
@@ -214,6 +224,20 @@ public class FormularioAluno extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(rootPane, objAlunoDTO.toString());
     }//GEN-LAST:event_btnEnviar1ActionPerformed
+
+    private void btnProfessor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfessor1ActionPerformed
+        FormularioProfessor chamaCarlinhos = new FormularioProfessor();
+        chamaCarlinhos.setVisible(true);
+        FormularioAluno FA = new FormularioAluno();
+        FA.setVisible(false);
+    }//GEN-LAST:event_btnProfessor1ActionPerformed
+
+    private void btnPessoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPessoaActionPerformed
+        Formulario chamaPiaba = new Formulario();
+        chamaPiaba.setVisible(true);
+        FormularioAluno FA = new FormularioAluno();
+        FA.setVisible(false);
+    }//GEN-LAST:event_btnPessoaActionPerformed
 
     /**
      * @param args the command line arguments

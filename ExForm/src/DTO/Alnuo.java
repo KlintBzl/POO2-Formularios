@@ -35,7 +35,8 @@ public class Alnuo extends Pessoa{
 
     @Override
     public String toString() {
-        return "Alnuo{" + "NMatricula=" + NMatricula + ", Curso=" + Curso + ", Responsavel=" + Responsavel + '}';
+        return "Alnuo{" + "Nome: " + getNome() + "| Sobrenome: " + getSobrenome() + "| CPF: " + getCPF() + "| RG: " + getRG()
+                + "| Telefone: " + getTelefone() + "| Curso: " + Curso + "| NMatricula: " + NMatricula + "| Responsável: " + Responsavel +'}';
     }
     
     

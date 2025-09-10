@@ -271,24 +271,25 @@ public class Formulario extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNomeActionPerformed
 
     private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarActionPerformed
-//        Pessoa objPessoaDTO = new Pessoa("Klint", "Burzlaff Berta Lemes", "klintscouts@gmail.com",
-//                "995961108", "673648351", "04484804093", "", 16);
-//        System.out.println(objPessoaDTO.toString());
 
             Pessoa objPessoaDTO = new Pessoa(txtNome.getText(), txtSobrenome.getText(), txtEmail.getText(),txtTelefone.getText(),
                     txtCEP.getText(), txtCPF.getText(), txtRG.getText(), Integer.parseInt(txtIdade.getText()));
             
-            JOptionPane.showMessageDialog(rootPane, objPessoaDTO.toString());
+            System.out.println(objPessoaDTO.toString());
     }//GEN-LAST:event_btnEnviarActionPerformed
 
     private void btnAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlunoActionPerformed
         FormularioAluno chamaCatenga = new FormularioAluno();
         chamaCatenga.setVisible(true);
+        Formulario F = new Formulario();
+        F.setVisible(false);
     }//GEN-LAST:event_btnAlunoActionPerformed
 
     private void btnProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfessorActionPerformed
-        FormularioProf chamaCarlinhos = new FormularioProf();
+        FormularioProfessor chamaCarlinhos = new FormularioProfessor();
         chamaCarlinhos.setVisible(true);
+        Formulario F = new Formulario();
+        F.setVisible(false);
     }//GEN-LAST:event_btnProfessorActionPerformed
 
     
